@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Date Night Atlanta</title>
+    <title>GrooveATL</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="assets/css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
+
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <!--<script>
+        $(document).ready(function () {
+            $(".concerts").click(function() {
+                $.ajax({url: "concerts_script.js", dataType: "script"});
+            }
+
+            });
+
+    </script>-->
 
 </head>
+
 <body>
 
-<div class="container">
-    <div class="jumbotron">
-        <h1>Date Night Out Atlanta</h1>
-        <p>Are you ready to have fun tonight? </p>
-    </div>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -26,8 +37,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="restaurants.html">Resturants</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
                     <li><a href="concerts.html">Concerts</a></li>
                     <li><a href="movies.html">Movies</a></li>
                 </ul>
@@ -37,25 +49,36 @@
             </div>
         </div>
     </nav>
-
-    <div class="container-fluid text-center">
-        <div class="row content">
-            <div class="col-sm-2 sidenav">
-            </div>
-            <div class="col-sm-8 text-left">
-                <h1>Welcome</h1>
-                <p> Technology will ideally make our lives easier, and that's true even when it comes to planning your date night in Atlanta.  Whether you're searching for the perfect table setting, concerts of a life time or great movies, we are ready to help you. With the assistance of our great team, planning a night out is going to be easier than ever. You might just find yourself feeling so relaxed that you can't wait to go out again! </p>
-                <hr>
-                <h3>Please leave us your comments</h3>
-                <p>We would love to hear from you...</p>
-            </div>
-            <div class="col-sm-2 sidenav">
-            </div>
+    <div class="jumbotron">
+        <div class="spotlights animated bounce">
+            <img src="http://www.joannekleindiva.com/images/spotlight.png" alt="spotlights">
+        </div>
+        <div class="title animated zoomIn">
+            <h1>GrooveATL</h1>
         </div>
     </div>
-</div>
-<footer class="container-fluid text-center">
-    <p>© 2017 Date Night Out Atlanta LLC - - All rights reserved </p>
-</footer>
+
+    <div class="container-fluid text-center">
+        <div class="concerts">
+            <h1>Concerts</h1>
+        </div>
+
+        <div class="row content">
+            <div class="primary-container">
+            </div>
+        </div>
+            <div class="concerts">
+                <h1>Concerts</h1>
+            </div>
+        </div>
+        <footer class="container-fluid text-center">
+
+            <p>© 2017 GrooveATL LLC - - All rights reserved </p>
+
+        </footer>
+
+    <script type="text/javascript" src="assets/css/concerts.js"></script>
+
 </body>
+
 </html>
