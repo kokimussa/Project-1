@@ -24,18 +24,19 @@ $.ajax({
         var pRating = $("<p>").text(results[i].restaurant.user_rating.aggregate_rating);
 
         // Creating a paragraph tag with the restaurants' url
-        var pURL = $("<p>").text(results[i].restaurant.url);
+        var pURL = $("<p>").text("href",results[i].restaurant.url);
 
-        // Creating and storing an image tag
-        var restaurantImage = $("<img>");
-        restaurantImage.attr("src", results[i].restaurant.photos_url);
+        // Creating a paragraph tag with the restaurants' photo_url
 
+
+
+
+        restaurantDiv.append(i+1);
         restaurantDiv.append(pName);
         restaurantDiv.append(pRating);
         restaurantDiv.append(pURL);
-        restaurantDiv.append(restaurantImage);
 
-        $("#restaurant-appear-hear").prepend(restaurantDiv);
+        $("#restaurant-appear-hear").append(restaurantDiv);
 
     }
    // console.log(restaurants);

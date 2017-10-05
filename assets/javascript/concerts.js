@@ -25,7 +25,7 @@ $.ajax({
 
 
             // Creating an image tag with the concert's poster
-            var concert_poster_url = concertResult[i].images[0].url;
+            var concert_poster_url = concertResult[i].images[1].url;
             var concertImage = $("<img>");
             concertImage.attr("src", concert_poster_url);
 
