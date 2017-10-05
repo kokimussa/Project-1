@@ -1,61 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Date Night Atlanta</title>
+
+<head>
+    <title>GrooveATL</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="assets/css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-  </head>
-  <body>
-    
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Date Night Out Atlanta</h1>
-        <p>Are you ready to have fun tonight? </p>
-      </div>
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Resturants</a></li>
-              <li><a href="#">Concerts</a></li>
-              <li><a href="#">Movies</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-      <div class="container-fluid text-center">
-        <div class="row content">
-          <div class="col-sm-2 sidenav">
-          </div>
-          <div class="col-sm-8 text-left">
-            <h1>Welcome</h1>
-            <p> Technology will ideally make our lives easier, and that's true even when it comes to planning your date night in Atlanta.  Whether you're searching for the perfect table setting, concerts of a life time or great movies, we are ready to help you. With the assistance of our great team, planning a night out is going to be easier than ever. You might just find yourself feeling so relaxed that you can't wait to go out again! </p>
-            <hr>
-            <h3>Please leave us your comments</h3>
-            <p>We would love to hear from you...</p>
-          </div>
-          <div class="col-sm-2 sidenav">
-          </div>
-        </div>
-      </div>
+
+</head>
+
+<body>
+    <div class="page-container">
+        <nav class="page-nav navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                <span class="fa fa-home" style= "font-size:35px;color:white;" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                </ul>
+                    <div class="nav navbar-nav navbar-right">
+
+                        <button class="login-button" data-toggle="modal" data-target="#newmodal" data-email="email">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            <span>Login</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="page-main">
+            <div class="jumbotron">
+                <div class="spotlights animated bounce">
+                    <img src="http://www.joannekleindiva.com/images/spotlight.png" alt="spotlights">
+                </div>
+                <div class="title animated zoomIn">
+                    <h1>GrooveATL</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-fluid text-center">
+                    <figure class="snip1361">
+                        <img src="http://tourismattraction.com/wp-content/uploads/2014/11/P9gQ3ui.jpg" alt="restaurants" />
+                        <figcaption>
+                            <h3>Restaurants</h3>
+                            <p>Atlanta's HotSpots</p>
+                        </figcaption>
+                        <a href="restaurants.html"></a>
+                    </figure>
+                    <figure class="snip1361">
+                        <img src="https://i.ytimg.com/vi/-8IIkTDoev8/maxresdefault.jpg" alt="concerts" />
+                        <figcaption>
+                            <h3>Concerts</h3>
+                            <p>Enjoy the Music</p>
+                        </figcaption>
+                        <a href="concerts.html"></a>
+                    </figure>
+                    <figure class="snip1361"><img src="http://images.desimartini.com/media/uploads/samarth_interior.jpg" alt="movies" />
+                        <figcaption>
+                            <h3>Movies</h3>
+                            <p> Box Office Hits </p>
+                        </figcaption>
+                        <a href="movies.html"></a>
+                    </figure>
+
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer text-center">
+            <p>© 2017 GrooveATL LLC - - All rights reserved </p>
+        </footer>
     </div>
-    <footer class="container-fluid text-center">
-      <p>© 2017 Date Night Out Atlanta LLC - - All rights reserved </p>
-    </footer>
-  </body>
+
+    <div class="modal fade" id="newmodal" tabindex="-1" role="dialog" aria-labelledby="newmodalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="newmodalLabel">Sign Up</h2>
+                    <button class="close" aria-label="Close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name" class="form-control-label">Name:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-control-label">Email:</label>
+                            <input type="text" class="form-control" id="email-text">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".hover").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+    <script src="https://use.fontawesome.com/c56eb5f331.js"></script>
+</body>
+
+
 </html>
