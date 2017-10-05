@@ -24,17 +24,15 @@ $.ajax({
         var pRating = $("<p>").text(results[i].restaurant.user_rating.aggregate_rating);
 
         // Creating a paragraph tag with the restaurants' url
-        var pURL = $("<p>").text("href",results[i].restaurant.url);
+        //var pURL = $("<a>");
+        //pURL.attr("href",results[i].restaurant.url);
+
 
         // Creating a paragraph tag with the restaurants' photo_url
-
-
-
-
         restaurantDiv.append(i+1);
         restaurantDiv.append(pName);
         restaurantDiv.append(pRating);
-        restaurantDiv.append(pURL);
+        //restaurantDiv.append(pURL);
 
         $("#restaurant-appear-hear").append(restaurantDiv);
 

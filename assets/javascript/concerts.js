@@ -29,7 +29,6 @@ $.ajax({
             var concertImage = $("<img>");
             concertImage.attr("src", concert_poster_url);
 
-
             concertDiv.append(i+1);
             concertDiv.append(pName);
             concertDiv.append(pDate);
