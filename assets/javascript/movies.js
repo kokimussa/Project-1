@@ -23,6 +23,7 @@ $.ajax({
       var posterImage = $("<img>");
       posterImage.attr("src", posterEndURL);
 
+      movieDiv.append(i+1);
       movieDiv.append(pTitle);
       movieDiv.append(pOverview);
       movieDiv.append(posterImage);
