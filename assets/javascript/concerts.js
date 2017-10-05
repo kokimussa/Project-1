@@ -11,11 +11,34 @@ $.ajax({
     url: queryURL,
     async:true,
     dataType: "json",
-    success: function(json) {
-        console.log(json);
-        // Parse the response.
-        // Do other things.
-        //for(var i = 0; i < 10)
+    success: function(concertData) {
+        console.log(concertData);
+        var concertResult = concertData._embedded.events;
+        for(var i = 0; i < 10; i++) {
+            var concertDiv = $("<div>");
+
+            // Creating a paragraph tag with the concert's name
+            var pName = $("<p>").text(concertResult[i].name);
+
+            // Creating a paragraph tag with the concert's date
+            var pDate = $("<p>").text(concertResult[i].dates.start.localDate + ", " + concertResult[i].dates.start.localTime);
+
+
+            // Creating an image tag with the concert's poster
+            var concert_poster_url = concertResult[i].images[0].url;
+            var concertImage = $("<img>");
+            concertImage.attr("src", concert_poster_url);
+
+            concertDiv.append(pName);
+            concertDiv.append(pDate);
+            concertDiv.append(concertImage);
+
+            $("#concerts-appear-hear").append(concertDiv);
+        }
+
+
+
+
     },
     error: function(xhr, status, err) {
         // This time, we do not end up here!
