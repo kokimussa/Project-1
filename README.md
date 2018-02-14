@@ -7,4 +7,5 @@ Web site uses HTML, CSS/Semantic UI, Javascript, AJAX, API, Firebase and Github 
 https://kokimussa.github.io/Project-1/
 
 
+![alt GROVE ATL]( https://github.com/kokimussa/Project-1/blob/master/GROVE-ATL.png)
 
